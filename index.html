@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>ChatGPT 对话查看器 ·  · V1.9.2</title>
+
 <style>
   :root{
     --bg:#f6f7f9;
@@ -1518,7 +1518,8 @@ body[data-nbdrawer="open"] #cg_nb_drawer{ pointer-events: auto; }
 body[data-kblock="1"]{ overflow: hidden; }
 
 </style>
-</head>
+
+
 <body>
 <div class="app">
   <header>
@@ -4437,7 +4438,7 @@ document.addEventListener('DOMContentLoaded', tryEnhanceStars); setTimeout(tryEn
     const VER = 'V1.7.2';
     window.__BUILD_META__ = window.__BUILD_META__ || {};
     window.__BUILD_META__.version = VER;
-    if (document.title && !document.title.includes(VER)) document.title = document.title + ' · ' + VER;
+    if (document.title && !document.title.includes(VER)) document.title = "ChatGPT\u5bf9\u8bdd\u67e5\u770b\u7ba1\u7406\u5668"; /* v3.3 lock */
     const badge = document.getElementById('cg_version_badge');
     if (badge) badge.textContent = VER;
   }catch(e){}
@@ -4526,7 +4527,7 @@ document.addEventListener('DOMContentLoaded', tryEnhanceStars); setTimeout(tryEn
     const VER = 'V1.8.6';
     window.__BUILD_META__ = window.__BUILD_META__ || {};
     window.__BUILD_META__.version = VER;
-    if (document.title && !document.title.includes(VER)) document.title = document.title + ' · ' + VER;
+    if (document.title && !document.title.includes(VER)) document.title = "ChatGPT\u5bf9\u8bdd\u67e5\u770b\u7ba1\u7406\u5668"; /* v3.3 lock */
     const badge = document.getElementById('cg_version_badge');
     if (badge) badge.textContent = VER;
   }catch(e){}
@@ -5005,11 +5006,11 @@ document.addEventListener('DOMContentLoaded', tryEnhanceStars); setTimeout(tryEn
   (function(){
     try{
       var fname = (location.pathname.split('/').pop() || '').replace(/\.html.*$/,'');
-      var ver = '1.8.5c';
-      document.title = 'ChatGPT 对话查看器 V（' + fname + '）' + ver;
+      var ver = '3.2';
+      document.title = "ChatGPT\u5bf9\u8bdd\u67e5\u770b\u7ba1\u7406\u5668"; /* v3.3 lock */
       var candidates = Array.from(document.querySelectorAll('h1, .app-title, [data-app-title]'));
       var hit = candidates.find(el=> /ChatGPT\s*对话查看器/i.test(el.textContent||''));
-      if(hit){ hit.textContent = 'ChatGPT 对话查看器 VV1.9（' + fname + '）' + ver; }
+      if(hit){ hit.textContent = 'ChatGPT 对话查看管理器（' + fname + '）' + ver; }
     }catch(e){}
   })();
 })();
@@ -7762,7 +7763,7 @@ button#entryIndexBtn { display:none !important; }
     if(tag){ tag.textContent = VER; }
     if(document && document.title){
       if(document.title.indexOf(VER) < 0){
-        document.title = document.title.replace(/(·\s*V\d+\.\d+(?:\.\d+)*)/,'').trim() + ' · ' + VER;
+        document.title = "ChatGPT\u5bf9\u8bdd\u67e5\u770b\u7ba1\u7406\u5668"; /* v3.3 lock */
       }
     }
   }catch(e){}
@@ -8317,7 +8318,7 @@ body[data-kblock="1"]{ overflow: hidden; }
       window.__BUILD_META__.version = VER;
       const badge = document.getElementById('cg_version_badge');
       if (badge) badge.textContent = VER;
-      if (document.title && !document.title.includes(VER)) document.title = document.title + ' · ' + VER;
+      if (document.title && !document.title.includes(VER)) document.title = "ChatGPT\u5bf9\u8bdd\u67e5\u770b\u7ba1\u7406\u5668"; /* v3.3 lock */
     }catch(e){}
   });
 
@@ -8438,7 +8439,7 @@ body[data-kblock="1"]{ overflow: hidden; }
     const VER='V2.9.1';
     const badge=document.getElementById('cg_version_badge');
     if (badge) badge.textContent = VER;
-    if (document.title && !document.title.includes(VER)) document.title = document.title.replace('V2.9.1', VER) + ' · ' + VER;
+    if (document.title && !document.title.includes(VER)) document.title = "ChatGPT\u5bf9\u8bdd\u67e5\u770b\u7ba1\u7406\u5668"; /* v3.3 lock */
   }catch(e){}
 })();
 </script>
